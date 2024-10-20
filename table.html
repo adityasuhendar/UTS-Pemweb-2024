@@ -1,0 +1,158 @@
+<!-- Aditya Wahyu Suhendar -->
+<!-- 122140235 -->
+<!-- Pemrograman Web - RB -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kritik dan Saran Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .table-responsive {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+        th, td {
+            border: 1px solid #A0AEC0;
+            padding: 12px;
+            text-align: left;
+        }
+    </style>
+
+</head>
+<body>
+  <header class="header bg-gray-800 text-white text-center py-10">
+    <h1 class="text-3xl font-bold">Review My Website</h1>
+    </header>
+    <div class="hamburger" onclick="toggleSidebar()">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="logo">
+            <h2>Nabi Muhammad SAW</h2>
+        </div>
+        <ul class="links">
+            <h4>Main Menu</h4>
+            <li>
+                <span class="material-symbols-outlined">dashboard</span>
+                <a href="index.html">Dashboard</a>
+            </li>
+            <li>
+                <span class="material-symbols-outlined">mail</span>
+                <a href="/form.html">Message</a>
+            </li>
+            <li>
+                <span class="material-symbols-outlined">bar_chart</span>
+                <a href="/table.html">Review</a>
+            </li>
+        </ul>
+    </aside>
+
+    <main class="content">
+        <section class="table-section">
+            <h3>Kritik dan Saran terhadap Website</h3>
+            <table class="w-full border-collapse border border-gray-400">
+                <thead class="bg-gray-100">
+                    <tr>
+                        <th class="border border-gray-400 px-4 py-2">No</th>
+                        <th class="border border-gray-400 px-4 py-2">Nama</th>
+                        <th class="border border-gray-400 px-4 py-2">Kritik dan Saran</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="border px-4 py-2">1</td><td class="border px-4 py-2">Ahmad</td><td class="border px-4 py-2">Tampilan website sangat menarik, namun perlu peningkatan pada kecepatan loading halaman.</td></tr>
+                    <tr><td class="border px-4 py-2">2</td><td class="border px-4 py-2">Budi</td><td class="border px-4 py-2">Navigasi sidebar agak membingungkan, mungkin bisa diberi label lebih jelas.</td></tr>
+                    <tr><td class="border px-4 py-2">3</td><td class="border px-4 py-2">Citra</td><td class="border px-4 py-2">Saran untuk menambahkan fitur dark mode agar lebih nyaman digunakan pada malam hari.</td></tr>
+                    <tr><td class="border px-4 py-2">4</td><td class="border px-4 py-2">Dewi</td><td class="border px-4 py-2">Font yang digunakan terlalu kecil, mohon ditingkatkan ukuran font untuk kenyamanan membaca.</td></tr>
+                    <tr><td class="border px-4 py-2">5</td><td class="border px-4 py-2">Eko</td><td class="border px-4 py-2">Perlu ada lebih banyak gambar ilustrasi untuk memperjelas konten yang disampaikan.</td></tr>
+                    <tr><td class="border px-4 py-2">6</td><td class="border px-4 py-2">Fajar</td><td class="border px-4 py-2">Beberapa link tidak berfungsi, mohon diperiksa kembali.</td></tr>
+                    <tr><td class="border px-4 py-2">7</td><td class="border px-4 py-2">Gina</td><td class="border px-4 py-2">Bagian footer kurang informatif, mungkin bisa ditambahkan kontak atau sosial media.</td></tr>
+                    <tr><td class="border px-4 py-2">8</td><td class="border px-4 py-2">Hadi</td><td class="border px-4 py-2">Saran untuk menambahkan halaman FAQ untuk menjawab pertanyaan umum pengguna.</td></tr>
+                    <tr><td class="border px-4 py-2">9</td><td class="border px-4 py-2">Indah</td><td class="border px-4 py-2">Warna latar belakang kurang kontras dengan teks, mohon dipertimbangkan warna yang lebih nyaman.</td></tr>
+                    <tr><td class="border px-4 py-2">10</td><td class="border px-4 py-2">Joko</td><td class="border px-4 py-2">Sebaiknya ditambahkan fitur pencarian agar lebih mudah menemukan informasi.</td></tr>
+                    <tr><td class="border px-4 py-2">11</td><td class="border px-4 py-2">Kiki</td><td class="border px-4 py-2">Animasi saat membuka menu cukup lama, sebaiknya dipercepat.</td></tr>
+                    <tr><td class="border px-4 py-2">12</td><td class="border px-4 py-2">Lina</td><td class="border px-4 py-2">Konten sangat informatif, namun mohon perhatikan typo yang masih ada.</td></tr>
+                    <tr><td class="border px-4 py-2">13</td><td class="border px-4 py-2">Maman</td><td class="border px-4 py-2">Mohon tambahkan fitur komentar agar pengguna dapat memberikan feedback langsung.</td></tr>
+                    <tr><td class="border px-4 py-2">14</td><td class="border px-4 py-2">Nina</td><td class="border px-4 py-2">Halaman kontak perlu ditambahkan peta lokasi agar lebih jelas.</td></tr>
+                    <tr><td class="border px-4 py-2">15</td><td class="border px-4 py-2">Omar</td><td class="border px-4 py-2">Website sudah bagus, tetapi akan lebih baik jika ada versi aplikasi mobile.</td></tr>
+                    <tr><td class="border px-4 py-2">16</td><td class="border px-4 py-2">Putri</td><td class="border px-4 py-2">Terlalu banyak elemen animasi yang mengganggu, sebaiknya dikurangi.</td></tr>
+                    <tr><td class="border px-4 py-2">17</td><td class="border px-4 py-2">Qori</td><td class="border px-4 py-2">Perlu ada pilihan bahasa untuk pengguna internasional.</td></tr>
+                    <tr><td class="border px-4 py-2">18</td><td class="border px-4 py-2">Rina</td><td class="border px-4 py-2">Tabel data agak sulit dibaca, mohon tambahkan garis pembatas yang lebih jelas.</td></tr>
+                    <tr><td class="border px-4 py-2">19</td><td class="border px-4 py-2">Siti</td><td class="border px-4 py-2">Sebaiknya ditambahkan tombol back to top untuk navigasi yang lebih mudah.</td></tr>
+                    <tr><td class="border px-4 py-2">20</td><td class="border px-4 py-2">Toni</td><td class="border px-4 py-2">Perlu ada penjelasan lebih detail tentang setiap fitur yang ada di website.</td></tr>
+                    <tr><td class="border px-4 py-2">21</td><td class="border px-4 py-2">Umi</td><td class="border px-4 py-2">Bagian gambar kurang jelas, sebaiknya gunakan resolusi yang lebih tinggi.</td></tr>
+                    <tr><td class="border px-4 py-2">22</td><td class="border px-4 py-2">Vina</td><td class="border px-4 py-2">Perlu ditambahkan video tutorial untuk memudahkan pengguna baru.</td></tr>
+                    <tr><td class="border px-4 py-2">23</td><td class="border px-4 py-2">Wawan</td><td class="border px-4 py-2">Penggunaan warna terlalu mencolok, mohon dibuat lebih soft agar tidak melelahkan mata.</td></tr>
+                    <tr><td class="border px-4 py-2">24</td><td class="border px-4 py-2">Xena</td><td class="border px-4 py-2">Perlu ada fitur bookmark untuk menyimpan halaman penting.</td></tr>
+                    <tr><td class="border px-4 py-2">25</td><td class="border px-4 py-2">Yudi</td><td class="border px-4 py-2">Loading gambar di halaman utama cukup lama, sebaiknya dioptimalkan.</td></tr>
+                    <tr><td class="border px-4 py-2">26</td><td class="border px-4 py-2">Zara</td><td class="border px-4 py-2">Tombol call-to-action kurang menonjol, sebaiknya diberi warna yang lebih kontras.</td></tr>
+                    <tr><td class="border px-4 py-2">27</td><td class="border px-4 py-2">Andi</td><td class="border px-4 py-2">Halaman berita perlu ditambahkan tanggal publikasi agar lebih jelas.</td></tr>
+                    <tr><td class="border px-4 py-2">28</td><td class="border px-4 py-2">Bambang</td><td class="border px-4 py-2">Formulir pendaftaran kurang user-friendly, mohon disederhanakan.</td></tr>
+                    <tr><td class="border px-4 py-2">29</td><td class="border px-4 py-2">Cici</td><td class="border px-4 py-2">Fitur galeri foto perlu diperbarui agar lebih menarik.</td></tr>
+                    <tr><td class="border px-4 py-2">30</td><td class="border px-4 py-2">Dian</td><td class="border px-4 py-2">Website sangat membantu, tapi mohon tambahkan fitur rating untuk penilaian pengguna.</td></tr>
+                    <tr><td class="border px-4 py-2">31</td><td class="border px-4 py-2">Euis</td><td class="border px-4 py-2">Sebaiknya ada halaman testimoni agar pengguna bisa melihat pengalaman orang lain.</td></tr>
+                    <tr><td class="border px-4 py-2">32</td><td class="border px-4 py-2">Fani</td><td class="border px-4 py-2">Saran untuk menambahkan fitur live chat untuk mempermudah komunikasi dengan admin.</td></tr>
+                    <tr><td class="border px-4 py-2">33</td><td class="border px-4 py-2">Gilang</td><td class="border px-4 py-2">Halaman loading cukup lama, sebaiknya tambahkan loading indicator.</td></tr>
+                    <tr><td class="border px-4 py-2">34</td><td class="border px-4 py-2">Hana</td><td class="border px-4 py-2">Sebaiknya tambahkan opsi pembayaran yang lebih bervariasi untuk kenyamanan pengguna.</td></tr>
+                    <tr><td class="border px-4 py-2">35</td><td class="border px-4 py-2">Ira</td><td class="border px-4 py-2">Beberapa bagian teks terlihat terpotong, mohon diperiksa kembali.</td></tr>
+                    <tr><td class="border px-4 py-2">36</td><td class="border px-4 py-2">Jamil</td><td class="border px-4 py-2">Sebaiknya ditambahkan informasi tentang kebijakan privasi untuk keamanan data pengguna.</td></tr>
+                    <tr><td class="border px-4 py-2">37</td><td class="border px-4 py-2">Khalid</td><td class="border px-4 py-2">Perlu ada panduan penggunaan website untuk pengguna baru.</td></tr>
+                    <tr><td class="border px-4 py-2">38</td><td class="border px-4 py-2">Rina</td><td class="border px-4 py-2">Perlu ada fitur wishlist untuk menyimpan produk yang ingin dibeli di masa mendatang.</td></tr>
+                    <tr><td class="border px-4 py-2">39</td><td class="border px-4 py-2">Siti</td><td class="border px-4 py-2">Konten artikel terlalu panjang, mohon ditambahkan ringkasan di awal artikel.</td></tr>
+                    <tr><td class="border px-4 py-2">40</td><td class="border px-4 py-2">Toni</td><td class="border px-4 py-2">Website perlu menambahkan fitur sharing otomatis ke sosial media setelah melakukan pendaftaran.</td></tr>
+                    <tr><td class="border px-4 py-2">41</td><td class="border px-4 py-2">Umi</td><td class="border px-4 py-2">Perlu ada pilihan ukuran teks agar pengguna dapat menyesuaikan kenyamanan membaca.</td></tr>
+                    <tr><td class="border px-4 py-2">42</td><td class="border px-4 py-2">Vina</td><td class="border px-4 py-2">Saran untuk menambahkan fitur pengingat agar pengguna mendapatkan notifikasi terkait konten yang diminati.</td></tr>
+                    <tr><td class="border px-4 py-2">43</td><td class="border px-4 py-2">Wawan</td><td class="border px-4 py-2">Bagian FAQ sebaiknya diperjelas dengan kategori agar lebih mudah dipahami.</td></tr>
+                    <tr><td class="border px-4 py-2">44</td><td class="border px-4 py-2">Xena</td><td class="border px-4 py-2">Perlu ada opsi untuk mengubah tema warna situs untuk menyesuaikan preferensi pengguna.</td></tr>
+                    <tr><td class="border px-4 py-2">45</td><td class="border px-4 py-2">Yudi</td><td class="border px-4 py-2">Formulir registrasi sebaiknya tidak meminta terlalu banyak informasi pribadi.</td></tr>
+                    <tr><td class="border px-4 py-2">46</td><td class="border px-4 py-2">Zara</td><td class="border px-4 py-2">Perlu ada fitur untuk melihat artikel yang terakhir dibaca agar memudahkan pengguna melanjutkan membaca.</td></tr>
+                    <tr><td class="border px-4 py-2">47</td><td class="border px-4 py-2">Andi</td><td class="border px-4 py-2">Bagian testimonial sebaiknya diberikan rating bintang untuk pengalaman pengguna.</td></tr>
+                    <tr><td class="border px-4 py-2">48</td><td class="border px-4 py-2">Bambang</td><td class="border px-4 py-2">Perlu adanya opsi untuk mengunduh konten dalam bentuk PDF agar pengguna dapat menyimpan informasi penting.</td></tr>
+                    <tr><td class="border px-4 py-2">49</td><td class="border px-4 py-2">Cici</td><td class="border px-4 py-2">Fitur live chat sebaiknya disertai dengan chatbot untuk menjawab pertanyaan umum secara otomatis.</td></tr>
+                    <tr><td class="border px-4 py-2">50</td><td class="border px-4 py-2">Dian</td><td class="border px-4 py-2">Perlu ada sistem pemberian reward bagi pengguna yang aktif memberikan feedback atau kontribusi.</td></tr>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-xl font-bold mb-2">Terima Kasih Telah Membaca</h2>
+            <p class="text-sm">Copyright © 2024. Aditya Wahyu Suhendar (122140235)</p>
+            <ul class="flex justify-center gap-6 mt-4">
+                <li>
+                    <a href="/index.html" class="flex items-center gap-1 hover:text-gray-400">
+                        <span class="material-symbols-outlined">home</span> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="/form.html" class="flex items-center gap-1 hover:text-gray-400">
+                        <span class="material-symbols-outlined">mail</span> Message
+                    </a>
+                </li>
+                <li>
+                    <a href="/table.html" class="flex items-center gap-1 hover:text-gray-400">
+                        <span class="material-symbols-outlined">info</span> Tentang
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</html>

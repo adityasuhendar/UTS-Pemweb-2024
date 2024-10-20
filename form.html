@@ -1,0 +1,131 @@
+<!-- Aditya Wahyu Suhendar -->
+<!-- 122140235 -->
+<!-- Pemrograman Web - RB -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabi Muhammad SAW</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="header bg-gray-800 text-white text-center py-10">
+        <h1 class="text-3xl font-bold">Kritik dan Saran</h1>
+    </header>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="logo">
+            <h2>Nabi Muhammad SAW</h2>
+        </div>
+        <ul class="links">
+            <h4>Main Menu</h4>
+            <li>
+                <span class="material-symbols-outlined">dashboard</span>
+                <a href="/index.html">Dashboard</a>
+            </li>
+            <li>
+                <span class="material-symbols-outlined">mail</span>
+                <a href="/form.html">Message</a>
+            </li>
+            <li>
+                <span class="material-symbols-outlined">bar_chart</span>
+                <a href="/table.html">Review</a>
+            </li>
+        </ul>
+    </aside>
+    <div class="hamburger" onclick="toggleSidebar()">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+    <main class="p-10 flex justify-center">
+        <form method="GET" action="/submit.html" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-lg">
+            <div class="mb-4">
+                <label for="nama" class="block text-gray-700 font-bold mb-2">Nama:</label>
+                <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap Anda" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+            </div>
+
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Contoh: nama@email.com" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+            </div>
+
+            <div class="mb-4">
+                <label for="telepon" class="block text-gray-700 font-bold mb-2">Nomor Telepon:</label>
+                <input type="tel" id="telepon" name="telepon" pattern="[0-9]{10,15}" required placeholder="Contoh: 081234567890" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2">Jenis Kelamin:</label>
+                <div class="flex items-center">
+                    <input type="radio" id="laki" name="gender" value="Laki-laki" required class="mr-2">
+                    <label for="laki" class="mr-4">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="gender" value="Perempuan" required class="mr-2">
+                    <label for="perempuan">Perempuan</label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="tanggal" class="block text-gray-700 font-bold mb-2">Tanggal Lahir:</label>
+                <input type="date" id="tanggal" name="tanggal_lahir" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2">Kritik dan Saran Website:</label>
+                <div class="flex items-center">
+                    <input type="checkbox" id="desain" name="kritik_saran" value="Desain" required class="mr-2">
+                    <label for="desain" class="mr-4">Desain</label>
+                    <input type="checkbox" id="fungsionalitas" name="kritik_saran" value="Fungsionalitas" class="mr-2">
+                    <label for="fungsionalitas" class="mr-4">Fungsionalitas</label>
+                    <input type="checkbox" id="konten" name="kritik_saran" value="Konten" class="mr-2">
+                    <label for="konten">Konten</label>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="pesan" class="block text-gray-700 font-bold mb-2">Pesan/Kritik dan Saran Lainnya:</label>
+                <textarea id="pesan" name="pesan" rows="4" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Tulis pesan Anda di sini..."></textarea>
+            </div>
+
+            <div class="flex items-center justify-between">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-xl font-bold mb-2">Terima Kasih Telah Membaca</h2>
+            <p class="text-sm">Copyright © 2024. Aditya Wahyu Suhendar (122140235)</p>
+            <ul class="flex justify-center gap-6 mt-4">
+                <li>
+                    <a href="/index.html" class="flex items-center gap-1 hover:text-gray-400">
+                        <span class="material-symbols-outlined">home</span> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="/form.html" class="flex items-center gap-1 hover:text-gray-400">
+                        <span class="material-symbols-outlined">mail</span> Message
+                    </a>
+                </li>
+                <li>
+                    <a href="/table.html" class="flex items-center gap-1 hover:text-gray-400">
+                        <span class="material-symbols-outlined">info</span> Tentang
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</html>
